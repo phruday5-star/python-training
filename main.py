@@ -104,3 +104,20 @@ if year%4==0 and year%100!=0:
     print("leap year")
 else:
     print("not a leap year")
+
+
+    #(you are given an arrey A of size N, where each element represent 
+    #the numberof cupceakes sold in a single transaction. your task is 
+    #to find and return an integer value representing the sum of the cupceakes
+    #from the transactions where 5 or more cupceackes where sold. return 0 if 
+    #there is no transaction with more than 5 cupcakes sold ?)
+def cupcakes(n,arr):
+ sum=0
+ for i in range(n):
+        if arr[i]>=5:
+            sum+=arr[i]
+ print(sum)
+n=5
+arr=[1,2,5,3,8,7]
+cupcakes(n,arr)
+        
