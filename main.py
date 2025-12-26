@@ -97,3 +97,10 @@ for i in range(n):
         else:
              print(" ",end=" ")
     print()
+
+#write a progam to check whether the given year is leaper or not
+year=int(input())
+if year%4==0 and year%100!=0:
+    print("leap year")
+else:
+    print("not a leap year")
