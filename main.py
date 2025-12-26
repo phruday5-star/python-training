@@ -121,3 +121,20 @@ n=5
 arr=[1,2,5,3,8,7]
 cupcakes(n,arr)
         
+#you are given two strings A,B.your task is to find and return a string representing 
+#the a leftover string in A after removing al the letters that exist in string B.
+# return EMPTY if the outputs does not contain any value?
+def leftover(a,b):
+    left=""
+    remove=set(b)
+    for ch in a:
+        if ch not in remove:
+            left+=ch
+        if left:
+            print(left)
+        else:
+            print("empty")
+a="bde"
+b="bde"
+leftover(a,b)
+        
