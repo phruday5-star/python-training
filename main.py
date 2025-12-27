@@ -175,6 +175,11 @@ print(min1,max1)
 x=[1,2,3,4,5]
 l=0
 r=len(x)-1
+while l<r:
+    x[l],x[r]=x[r],x[l]
+    l+=1
+    r-=1
+print(x)
 
 #problem 283 in leetcode
 def movezeroes(nums):
@@ -189,8 +194,3 @@ def movezeroes(nums):
     print(z)
 nums=[0,1,0,3,12]
 movezeroes(nums)
-while l<r:
-    x[l],x[r]=x[r],x[l]
-    l+=1
-    r-=1
-print(x)
