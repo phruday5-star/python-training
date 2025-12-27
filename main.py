@@ -170,3 +170,13 @@ for i in range(1,len(x)):
     if x[i]>max1:
         max1=x[i]
 print(min1,max1)
+
+#inpalce rotations of an bytearray
+x=[1,2,3,4,5]
+l=0
+r=len(x)-1
+while l<r:
+    x[l],x[r]=x[r],x[l]
+    l+=1
+    r-=1
+print(x)
