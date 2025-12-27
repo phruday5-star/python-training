@@ -160,3 +160,13 @@ for i in range (n):
         else: 
             print(" ",end=" ")
     print()
+
+#min and max values
+x=list(map(int,input().split()))
+min1=max1=x[0]
+for i in range(1,len(x)):
+    if x[i]<min1:
+       min1=x[i]
+    if x[i]>max1:
+        max1=x[i]
+print(min1,max1)
