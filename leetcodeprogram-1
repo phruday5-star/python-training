@@ -23,6 +23,20 @@ def reve(l,r):
         r-=1
     reve(0,len(nums)-1)
     reve(0,k-1)
+
+#non negative int
+def kk(nums):
+    k=[]
+    s=""
+    for num in nums:
+        s+=str(num)
+    i=int(s)+1
+    z=str(i)    
+    for ch in z:
+        k.append(int(ch))
+    print(k)
+nums=[9,9,9]
+kk(nums)
     reve(k,len(nums-1))   
 
 #majority element(169)
