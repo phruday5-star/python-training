@@ -52,7 +52,7 @@ class Solution:
                 c+=1
             else:
 
-#add digit
+#add digit(258)
 class Solution:
     def addDigits(self, num: int) -> int:
         while num>=10:
