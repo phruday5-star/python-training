@@ -213,3 +213,11 @@ num4.shownumber()
     print(z)
 nums=[0,1,0,3,12]
 movezeroes(nums)
+
+#recorrection
+def kk(n):
+    if n==5:
+        return
+    kk(n+1)
+    print((n))
+kk(1)
