@@ -221,3 +221,17 @@ def kk(n):
     kk(n+1)
     print((n))
 kk(1)
+
+#fibbanoci value
+def fib(n):
+    a=0
+    b=1
+    print(a)
+    print(b)
+    for i in range(2,n):
+        c=a+b
+        a=b 
+        b=c 
+        print()
+n=int(input())
+fib(n)
